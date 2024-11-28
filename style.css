@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 2rem 0;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#content {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+#content p {
+    text-align: center;
+    width: 10vh;
+    font-size: 1.20rem;
+}
+
+#main {
+    margin: 1rem -7rem;
+}
+
+#imgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 2rem 9rem;
+    box-shadow: 7px 0px 14px rgb(182, 176, 176, 1.5);
+    padding: 21px;
+    object-fit: cover;
+}
+
+#imgs img {
+    height: 250px;
+    width: 250px;
+    display: block;
+    padding: 0.5rem;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+button {
+    background-color: blueviolet;
+    color: white;
+    font-weight: 700;
+    padding: 15px 6px;
+    border: none;
+    border-radius: 20px;
+}
+
+a {
+    margin-left: 50%;
+    text-decoration: none;
+    background-color: blueviolet;
+    border-radius: 20px;
+    padding: 1%;
+    color: antiquewhite;
+}
+
+
+.cart-main {
+    height: 40vh;
+    box-shadow: 7px 0px 14px rgb(182, 176, 176, 1.5);
+    padding: 1.5%;
+    width: 40%;
+    margin-left: 30%;
+    overflow-y: scroll;
+    /* margin-top: 30vh; */
+}
+
+
+
+
+.cart-main h1 {
+    border-bottom: 1px solid rgb(182, 176, 176, 0.5);
+    margin-bottom: 1rem;
+}
+
+.cart-main h2 {
+    text-align: end;
+    border-top: 1px solid rgb(182, 176, 176, 0.5);
+    margin-top: 1rem;
+    position: sticky;
+    bottom: 2px;
+}
+
+.cart-main h2 span {
+    color: blue;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    height: 150px;
+    width: 150px;
+    background-color: #EEEEEE;
+    padding: 20px;
+    object-fit: contain;
+
+}
+
+.cart-item p,
+span {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+.cart-item .quant {
+    background-color: #EEEEEE;
+    padding: 3px 10px;
+    cursor: pointer;
+
+}
+
+.cart-item .quant:hover {
+    background-color: gray;
+}
+
+.cart-item .quant-value {
+    margin: 0 -20px;
+
+}
+
+
+
+.products p {
+    text-align: center;
+}
+
+.hide-cart {
+    display: none;
+}
