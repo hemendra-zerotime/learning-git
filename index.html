@@ -5,9 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header>
+        <h1>Available Products Add Product from below you want to buy</h1>
+        <!-- <a onclick="createHtml()">Create Html</a> -->
+    </header>
+    <div id="main">
+        <div id="imgs">
+            <div id="shirt-details" class="products">
+                <img id="Shirt"
+                    src="https://images.pexels.com/photos/769749/pexels-photo-769749.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1">
+                <p>Shirt</p>
+                <p>Rs. 650</p><button style="margin-left: 35%; " onclick="addToCart(Shirt)">Add to cart</button>
+            </div>
+            <div id="pant-details" class="products">
+                <img id="pant"
+                    src="https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1">
+                <p>pant</p>
+                <p>Rs. 3000</p><button style="margin-left: 35%; " onclick="addToCart(Pant)">Add to cart</button>
+            </div>
+            <div id="watch-details" class="products">
+                <img id="watch"
+                    src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1">
+                <p>watch</p>
+                <p>Rs. 2000</p>
+                <button style="margin-left: 35%; " onclick="addToCart(Watch)">Add to cart</button>
+            </div>
+            <div id="shoe-details" class="products">
+                <img id="Shoes"
+                    src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1">
+                <p>Shoes</p>
+                <p>Rs. 2500</p>
+                <button style="margin-left: 35%; " onclick="addToCart(Shoes)">Add to cart</button>
+            </div>
+            <div id="socks-details" class="products">
+                <img id="Socks"
+                    src="https://images.pexels.com/photos/4495753/pexels-photo-4495753.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1">
+                <p>Socks</p>
+                <p>Rs. 150</p><button style="margin-left: 35%; " onclick="addToCart(Socks)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <div id="cart-main" class="cart-main hide-cart">
+        <h1>Shopping cart</h1>
+        <div id="cart-items">
+
+        </div>
+        <h2>Total Amount :- <span id="cart-total"></span></h2>
+    </div>
+    <script src="index.js">
+    </script>
 </body>
 
 </html>
