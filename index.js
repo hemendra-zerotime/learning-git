@@ -206,4 +206,4 @@ function addToCart(val) {
     }
 }
 
-
+// Demo
